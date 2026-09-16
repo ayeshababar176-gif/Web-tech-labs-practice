@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student Form</title>
+</head>
+<body>
+    <h2>Student registration form</h2>
+    <form id="myform">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="your name">
+
+        <label>Email</label>
+    <input type="email" id="email" placeholder="ur email">
+
+ <label>course</label>
+    <select id="course">
+    <option>CS</option>
+    <option>AI</option>
+    <option>Python</option>
+</select>
+
+
+<label>gender</label>
+<input type="radio" id="gender">male
+<input type="radio" id="gender">female
+
+<button>submitt</button>
+<input type="submit" id="submit">
+    </form>
+    
+    <script>
+        document.getElementById("myform").onSubmitt=functiom(event)
+    event.preventDefault();
+    let name=document.GetIdByElementById("name").value
+    let email=document.GetElementById("email").value
+    let course=document.GetElementById("course").value
+    if(name==""||email==""|| course==""){
+        alert("plz enter valid fields")
+    }
+    else{
+        alert("form submitted")
+    }
+        
+    </script>
+</body>
+</html>

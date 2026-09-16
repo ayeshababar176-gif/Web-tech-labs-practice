@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Student Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Campus Student Dashboard</h1>
+        <h2>Lahore Garrison University</h2>
+        <p>School of Software Engineering</p>
+        <p>Manage your academic information easily</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Dashboard</a> |
+        <a href="#student">Student Details</a> |
+        <a href="#subjects">Subjects</a> |
+        <a href="#news">Campus News</a> |
+        <a href="#enroll">Enrollment</a> |
+        <a href="#footer">Help</a>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <!-- Dashboard -->
+        <section id="home">
+            <h2>Student Dashboard</h2>
+
+            <p>
+                Welcome to the campus dashboard. Students can use this
+                page to view academic details and register for subjects.
+            </p>
+
+            <p>
+                Explore more information on the
+                <a href="https://lgu.edu.pk" target="_blank">
+                    official university website
+                </a>.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Student Details -->
+        <section id="student">
+            <h2>Student Details</h2>
+
+            <img src="profile.jpg"
+                 alt="Student Profile"
+                 width="150"
+                 height="150">
+
+            <p><strong>Student Name:</strong> Iman Chishty</p>
+            <p><strong>Student ID:</strong> Fa24-BSCS-280</p>
+            <p><strong>Degree:</strong> BS Computer Science</p>
+            <p><strong>Current Semester:</strong> 5th Semester</p>
+            <p><strong>Email:</strong> iman@gmail.com</p>
+        </section>
+
+        <hr>
+
+        <!-- Subjects -->
+        <section id="subjects">
+            <h2>Current Subjects</h2>
+
+            <table border="1">
+                <caption>Semester Subject List</caption>
+
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Subject</th>
+                    <th>Credit Hours</th>
+                </tr>
+
+                <tr>
+                    <td>CS-201</td>
+                    <td>Software Engineering</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>CS-202</td>
+                    <td>Operating System</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>CS-203</td>
+                    <td>Web Development</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>CS-204</td>
+                    <td>HCI & Computer Graphics</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>CS-205</td>
+                    <td>Artificial Intelligence</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>CS-206</td>
+                    <td>Cloud Computing</td>
+                    <td>3</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Campus News -->
+        <section id="news">
+            <h2>Campus Announcements</h2>
+
+            <ol>
+                <li>Registration for the new semester is now open.</li>
+                <li>The university library will remain open until 8 PM.</li>
+                <li>Students can collect their examination schedule from the portal.</li>
+                <li>A seminar on software development will be held this month.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Enrollment Form -->
+        <section id="enroll">
+            <h2>Subject Enrollment</h2>
+
+            <form>
+
+                <!-- Name -->
+                <label for="studentname">Full Name:</label>
+                <br>
+
+                <input type="text" id="studentname"
+                       name="studentname"
+                       placeholder="Enter full name">
+
+                <br><br>
+
+                <!-- Student ID -->
+                <label for="studentid">Student ID:</label>
+                <br>
+
+                <input type="text" id="studentid"
+                       name="studentid"
+                       placeholder="Enter student ID">
+
+                <br><br>
+
+                <!-- Email -->
+                <label for="studentemail">Email:</label>
+                <br>
+
+                <input type="email" id="studentemail"
+                       name="studentemail"
+                       placeholder="Enter email address">
+
+                <br><br>
+
+                <!-- Gender -->
+                <label>Gender:</label>
+                <br>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+
+                <br><br>
+
+                <!-- DOB -->
+                <label for="birthdate">Date of Birth:</label>
+                <br>
+
+                <input type="date" id="birthdate" name="birthdate">
+
+                <br><br>
+
+                <!-- Department -->
+                <label for="dept">Choose Department:</label>
+                <br>
+
+                <select id="dept" name="dept">
+                    <option value="">Select Department</option>
+                    <option value="software">Software Engineering</option>
+                    <option value="computer">Computer Science</option>
+                    <option value="information">Information Technology</option>
+                    <option value="data">Data Science</option>
+                    <option value="ai">Artificial Intelligence</option>
+                </select>
+
+                <br><br>
+
+                <!-- Semester -->
+                <label for="sem">Choose Semester:</label>
+                <br>
+
+                <select id="sem" name="sem">
+                    <option value="">Select Semester</option>
+                    <option value="1">1st Semester</option>
+                    <option value="2">2nd Semester</option>
+                    <option value="3">3rd Semester</option>
+                    <option value="4">4th Semester</option>
+                    <option value="5">5th Semester</option>
+                    <option value="6">6th Semester</option>
+                    <option value="7">7th Semester</option>
+                    <option value="8">8th Semester</option>
+                </select>
+
+                <br><br>
+
+                <!-- Phone -->
+                <label for="mobile">Mobile Number:</label>
+                <br>
+
+                <input type="tel" id="mobile" name="mobile"
+                       placeholder="03XX-XXXXXXX">
+
+                <br><br>
+
+                <!-- Subject Selection -->
+                <p><strong>Choose Subjects:</strong></p>
+
+                <input type="checkbox" id="oop" name="subject" value="oop">
+                <label for="oop">Object Oriented Programming</label>
+                <br>
+
+                <input type="checkbox" id="sd" name="subject" value="sd">
+                <label for="sd">Software Design</label>
+                <br>
+
+                <input type="checkbox" id="web" name="subject" value="web">
+                <label for="web">Web Development</label>
+                <br>
+
+                <input type="checkbox" id="sre" name="subject" value="sre">
+                <label for="sre">Software Requirements Engineering</label>
+                <br>
+
+                <input type="checkbox" id="ca" name="subject" value="ca">
+                <label for="ca">Computer Architecture</label>
+                <br>
+
+                <input type="checkbox" id="tc" name="subject" value="tc">
+                <label for="tc">Technical Communication</label>
+
+                <br><br>
+
+                <!-- Address -->
+                <label for="address">Home Address:</label>
+                <br>
+
+                <textarea id="address"
+                          name="address"
+                          rows="4"
+                          cols="40"
+                          placeholder="Enter your home address"></textarea>
+
+                <br><br>
+
+                <!-- Comments -->
+                <label for="message">Message / Comments:</label>
+                <br>
+
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          cols="40"
+                          placeholder="Write your message"></textarea>
+
+                <br><br>
+
+                <button type="submit">Submit Enrollment</button>
+                <button type="reset">Reset Form</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+        <h3>Student Support</h3>
+
+        <p>Email: support@lgu.edu.pk</p>
+        <p>Phone: +92-321-7654321</p>
+
+        <p>
+            <a href="https://lgu.edu.pk" target="_blank">
+                Official University Website
+            </a>
+        </p>
+
+        <p>&copy; 2026 Campus Student Dashboard</p>
+
+    </footer>
+
+</body>
+
+</html>
