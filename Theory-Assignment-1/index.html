@@ -1,275 +1,760 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
+<meta charset="UTF-8">
 
-    <title>Student Study Hub</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
-    <style>
+<title>Student Study Hub</title>
 
-        body {
-            background-color: #f5f0e8;
-            font-family: Arial;
-            margin: 30px;
-        }
+<style>
 
-        .main-heading {
-            color: #4b2e2e;
-            text-align: center;
-        }
+    /* basic page design */
 
-        .heading {
-            color: #6b4040;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
 
-        .paragraph {
-            font-size: 17px;
-        }
+    body {
+        background-color: #f7f3fb;
+        color: #4d4660;
+        line-height: 1.6;
+    }
 
-        .links {
-            color: #8b4513;
-            margin-right: 20px;
-            text-decoration: underline;
-        }
+    /* header and navigation */
 
-        .study-image {
-            width: 200px;
-            height: 200px;
-        }
+    header {
+        background-color: #382550;
+        color: white;
+        padding: 20px 60px;
+    }
 
-        .list {
-            background-color: white;
-            width: 250px;
-            padding: 20px;
-        }
+    header h1 {
+        display: inline-block;
+        font-size: 28px;
+    }
 
-        .list-item {
-            margin: 8px;
-        }
+    header h1 span {
+        color: #c7a6df;
+    }
 
-        .course-table {
-            width: 80%;
-            border-collapse: collapse;
-            background-color: white;
-        }
+    nav {
+        float: right;
+        margin-top: 7px;
+    }
 
-        .table-heading {
-            background-color: #d8b4a0;
-            padding: 12px;
-        }
+    nav a {
+        color: white;
+        text-decoration: underline;
+        margin-left: 25px;
+        font-weight: bold;
+    }
 
-        .table-data {
-            border: 1px solid #6b4040;
-            padding: 12px;
-            text-align: center;
-        }
+    nav a:hover {
+        color: #d8bceb;
+    }
 
-        .form {
-            background-color: white;
-            width: 400px;
-            padding: 20px;
-        }
+    /* clear float */
 
-        .input {
-            margin: 8px;
-            padding: 7px;
-        }
+    main {
+        clear: both;
+    }
 
-        .button {
-            background-color: #6b4040;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-        }
+    /* home section */
 
-        .line {
-            border: 1px solid #d8b4a0;
-            margin: 25px 0;
-        }
+    #home {
+        background-color: #eee5f7;
+        padding: 55px 70px;
+        min-height: 360px;
+    }
 
-    </style>
+    #home article {
+        display: inline-block;
+        width: 52%;
+        vertical-align: top;
+        padding-top: 25px;
+    }
+
+    #home h5 {
+        color: #8055a6;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    #home h2 {
+        color: #382550;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    #home h2 span {
+        color: #8055a6;
+    }
+
+    #home p {
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    #home img {
+        width: 40%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-left: 5%;
+    }
+
+    /* buttons */
+
+    button {
+        background-color: #8055a6;
+        color: white;
+        border: none;
+        padding: 11px 20px;
+        border-radius: 6px;
+    }
+
+    button:hover {
+        background-color: #62407f;
+    }
+
+    /* common section design */
+
+    section {
+        padding: 45px 60px;
+    }
+
+    section > h2 {
+        text-align: center;
+        color: #382550;
+        margin-bottom: 10px;
+    }
+
+    section > p {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    /* about section */
+
+    #about {
+        background-color: white;
+    }
+
+    #about article {
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #about h3 {
+        color: #8055a6;
+        margin-bottom: 12px;
+    }
+
+    /* formatting section */
+
+    #formatting {
+        background-color: #eee5f7;
+    }
+
+    #formatting article {
+        background-color: white;
+        border-left: 5px solid #8055a6;
+        padding: 25px;
+        max-width: 800px;
+        margin: auto;
+        border-radius: 8px;
+    }
+
+    #formatting p {
+        margin-bottom: 12px;
+    }
+
+    mark {
+        background-color: #e1c8f0;
+        padding: 2px 5px;
+    }
+
+    /* courses */
+
+    #courses {
+        background-color: white;
+    }
+
+    #courses ul {
+        width: 60%;
+        margin: auto;
+        padding: 20px 50px;
+        background-color: #f3edf8;
+        border-radius: 8px;
+    }
+
+    #courses li {
+        margin: 8px;
+    }
+
+    /* learning steps */
+
+    #steps {
+        background-color: #eee5f7;
+    }
+
+    #steps ol {
+        width: 60%;
+        margin: auto;
+        padding: 20px 50px;
+        background-color: white;
+        border-radius: 8px;
+    }
+
+    #steps li {
+        margin: 8px;
+    }
+
+    /* resources */
+
+    #resources {
+        background-color: white;
+    }
+
+    #resources dl {
+        width: 70%;
+        margin: auto;
+    }
+
+    #resources dt {
+        color: #68478a;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+
+    #resources dd {
+        margin-left: 25px;
+    }
+
+    #resources a {
+        color: #68478a;
+        text-decoration: underline;
+    }
+
+    /* table */
+
+    #courses-table {
+        background-color: #eee5f7;
+    }
+
+    table {
+        width: 85%;
+        margin: auto;
+        border-collapse: collapse;
+        background-color: white;
+    }
+
+    th {
+        background-color: #382550;
+        color: white;
+        padding: 12px;
+    }
+
+    td {
+        border: 1px solid #d8cbe2;
+        padding: 12px;
+        text-align: center;
+    }
+
+    tr:hover {
+        background-color: #f3edf8;
+    }
+
+    /* contact */
+
+    #contact {
+        background-color: white;
+        text-align: center;
+    }
+
+    #contact article {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    #contact a {
+        color: #68478a;
+        text-decoration: underline;
+    }
+
+    /* footer */
+
+    footer {
+        background-color: #382550;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    footer span {
+        color: #c7a6df;
+    }
+
+    footer small {
+        display: block;
+        margin-top: 8px;
+        color: #ddd3e5;
+    }
+
+</style>
 
 </head>
 
 <body>
 
-    <!-- Main Heading -->
+```
+<!-- website header -->
 
-    <h1 class="main-heading">Student Study Hub</h1>
+<header>
 
-    <h2 class="heading">Welcome to Study Hub</h2>
+    <h1>
+        Study<span>Hub</span>
+    </h1>
 
-    <p class="paragraph">
-        Welcome to <strong>Student Study Hub</strong>.
-        We help students improve their
-        <b>academic</b> and <i>programming</i> skills.
-    </p>
+    <!-- navigation links -->
 
-    <p class="paragraph">
-        Our learning material is
-        <em>simple and easy</em> for students.
-    </p>
+    <nav>
 
-    <hr class="line">
+        <a href="#home">Home</a>
 
-    <!-- Navigation -->
+        <a href="#about">About</a>
 
-    <h2 class="heading">Navigation</h2>
+        <a href="#courses">Courses</a>
 
-    <a class="links" href="#home">Home</a>
-    <a class="links" href="#courses">Courses</a>
-    <a class="links" href="#resources">Resources</a>
-    <a class="links" href="#contact">Contact</a>
+        <a href="#resources">Resources</a>
 
-    <hr class="line">
+        <a href="#contact">Contact</a>
 
-    <!-- About Section -->
+    </nav>
 
-    <h2 class="heading" id="home">About Study Hub</h2>
+</header>
 
-    <p class="paragraph">
-        Study Hub is a place where students can learn
-        <u>HTML</u>, CSS and programming.
-    </p>
 
-    <img class="study-image"
-         src="Images/image.png"
-         alt="Students studying">
+<main>
 
-    <hr class="line">
 
-    <!-- Unordered List -->
+    <!-- home section -->
 
-    <h2 class="heading" id="courses">Our Courses</h2>
+    <section id="home">
 
-    <ul class="list">
+        <article>
 
-        <li class="list-item">HTML</li>
-        <li class="list-item">CSS</li>
-        <li class="list-item">JavaScript</li>
-        <li class="list-item">Python</li>
-        <li class="list-item">C++</li>
+            <h5>WELCOME TO STUDY HUB</h5>
 
-    </ul>
+            <h2>
+                Learn and
+                <span>Improve</span>
+                Your Skills
+            </h2>
 
-    <!-- Ordered List -->
+            <p>
+                Welcome to <strong>Student Study Hub</strong>,
+                a simple learning website created for
+                students who want to learn and practice
+                technical skills.
+            </p>
 
-    <h2 class="heading">Learning Steps</h2>
+            <p>
+                <b>Learn</b>,
+                <i>Practice</i> and
+                <u>Improve</u> your skills
+                step by step.
+            </p>
 
-    <ol class="list">
+            <button>
+                Start Learning
+            </button>
 
-        <li class="list-item">Choose a course</li>
-        <li class="list-item">Study the topic</li>
-        <li class="list-item">Practice examples</li>
-        <li class="list-item">Complete exercises</li>
-        <li class="list-item">Take a test</li>
+        </article>
 
-    </ol>
 
-    <hr class="line">
+        <img src="Images/image.png"
+             alt="Students studying together">
 
-    <!-- Table -->
 
-    <h2 class="heading" id="resources">
-        Course Information
+    </section>
+
+
+    <!-- about section -->
+
+    <section id="about">
+
+        <h2>
+            About Study Hub
+        </h2>
+
+        <p>
+            A simple place for students to learn.
+        </p>
+
+        <article>
+
+            <h3>
+                What is Study Hub?
+            </h3>
+
+            <p>
+                Study Hub is a student learning platform
+                where students can explore different
+                computer courses and improve their
+                technical knowledge.
+            </p>
+
+            <p>
+                Our aim is to make learning
+                <em>simple</em>,
+                <strong>organized</strong>
+                and easy to understand.
+            </p>
+
+            <hr>
+
+            <p>
+                Students can learn HTML, CSS,
+                JavaScript and Python.
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!-- text formatting section -->
+
+    <section id="formatting">
+
+        <h2>
+            HTML Text Formatting
+        </h2>
+
+        <p>
+            Some useful HTML formatting examples
+            are shown below.
+        </p>
+
+        <article>
+
+            <p>
+                <strong>Strong text:</strong>
+                Important information
+            </p>
+
+            <p>
+                <b>Bold text:</b>
+                Important course name
+            </p>
+
+            <p>
+                <em>Emphasized text:</em>
+                Focus on learning
+            </p>
+
+            <p>
+                <i>Italic text:</i>
+                Special information
+            </p>
+
+            <p>
+                <u>Underlined text:</u>
+                Important topic
+            </p>
+
+            <p>
+                <mark>Highlighted text:</mark>
+                Important note
+            </p>
+
+            <p>
+                <small>
+                    This is small text for additional information.
+                </small>
+            </p>
+
+            <p>
+                Water formula:
+                H<sub>2</sub>O
+            </p>
+
+            <p>
+                Square:
+                X<sup>2</sup>
+            </p>
+
+            <p>
+                Old course fee:
+                <del>5000 PKR</del>
+                <ins>4000 PKR</ins>
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!-- course list -->
+
+    <section id="courses">
+
+        <h2>
+            Available Courses
+        </h2>
+
+        <p>
+            Students can choose from these courses.
+        </p>
+
+        <!-- unordered list -->
+
+        <ul>
+
+            <li>HTML</li>
+
+            <li>CSS</li>
+
+            <li>JavaScript</li>
+
+            <li>Python</li>
+
+            <li>C++</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- learning steps -->
+
+    <section id="steps">
+
+        <h2>
+            Learning Steps
+        </h2>
+
+        <p>
+            Follow these steps to learn effectively.
+        </p>
+
+        <!-- ordered list -->
+
+        <ol>
+
+            <li>Choose a course</li>
+
+            <li>Study the topic</li>
+
+            <li>Practice examples</li>
+
+            <li>Complete exercises</li>
+
+            <li>Take a test</li>
+
+        </ol>
+
+    </section>
+
+
+    <!-- learning resources -->
+
+    <section id="resources">
+
+        <h2>
+            Learning Resources
+        </h2>
+
+        <p>
+            Useful resources for students.
+        </p>
+
+
+        <!-- description list -->
+
+        <dl>
+
+            <dt>HTML</dt>
+
+            <dd>
+                Used to create the structure
+                of web pages.
+            </dd>
+
+
+            <dt>CSS</dt>
+
+            <dd>
+                Used to design and style
+                web pages.
+            </dd>
+
+
+            <dt>JavaScript</dt>
+
+            <dd>
+                Used to add interaction
+                to websites.
+            </dd>
+
+
+            <dt>Useful Website</dt>
+
+            <dd>
+                Visit
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                   target="_blank">
+                    MDN HTML Documentation
+                </a>
+                to learn more about HTML.
+            </dd>
+
+        </dl>
+
+    </section>
+
+
+    <!-- course information table -->
+
+    <section id="courses-table">
+
+        <h2>
+            Course Information
+        </h2>
+
+        <p>
+            Details of available courses.
+        </p>
+
+
+        <table>
+
+            <tr>
+
+                <th>Course</th>
+
+                <th>Duration</th>
+
+                <th>Level</th>
+
+            </tr>
+
+
+            <tr>
+
+                <td>HTML</td>
+
+                <td>4 Weeks</td>
+
+                <td>Beginner</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>CSS</td>
+
+                <td>4 Weeks</td>
+
+                <td>Beginner</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>JavaScript</td>
+
+                <td>6 Weeks</td>
+
+                <td>Intermediate</td>
+
+            </tr>
+
+
+            <tr>
+
+                <td>Python</td>
+
+                <td>6 Weeks</td>
+
+                <td>Beginner</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- contact section -->
+
+    <section id="contact">
+
+        <h2>
+            Contact Study Hub
+        </h2>
+
+        <article>
+
+            <p>
+                If you want to learn more about
+                Study Hub, you can contact us.
+            </p>
+
+            <br>
+
+            <p>
+                Email:
+                <a href="mailto:studyhub@example.com">
+                    studyhub@example.com
+                </a>
+            </p>
+
+            <p>
+                Back to
+                <a href="#home">
+                    Home
+                </a>
+            </p>
+
+        </article>
+
+    </section>
+
+
+</main>
+
+
+<!-- footer -->
+
+<footer>
+
+    <h2>
+        Study<span>Hub</span>
     </h2>
 
-    <table class="course-table">
-
-        <tr>
-
-            <th class="table-heading">Course</th>
-            <th class="table-heading">Duration</th>
-            <th class="table-heading">Level</th>
-
-        </tr>
-
-        <tr>
-
-            <td class="table-data">HTML</td>
-            <td class="table-data">4 Weeks</td>
-            <td class="table-data">Beginner</td>
-
-        </tr>
-
-        <tr>
-
-            <td class="table-data">CSS</td>
-            <td class="table-data">4 Weeks</td>
-            <td class="table-data">Beginner</td>
-
-        </tr>
-
-        <tr>
-
-            <td class="table-data">JavaScript</td>
-            <td class="table-data">6 Weeks</td>
-            <td class="table-data">Intermediate</td>
-
-        </tr>
-
-        <tr>
-
-            <td class="table-data">Python</td>
-            <td class="table-data">6 Weeks</td>
-            <td class="table-data">Beginner</td>
-
-        </tr>
-
-    </table>
-
-    <hr class="line">
-
-    <!-- Registration Form -->
-
-    <h2 class="heading" id="contact">
-        Join Study Hub
-    </h2>
-
-    <form class="form">
-
-        <label>Name:</label>
-
-        <input class="input" type="text">
-
-        <br>
-
-        <label>Email:</label>
-
-        <input class="input" type="email">
-
-        <br>
-
-        <label>Password:</label>
-
-        <input class="input" type="password">
-
-        <br>
-   
-        <label for="course">course</label>
-        <select class="course">
-            <options>HTML</options>
-            <Options>CSS</Options>
-            <option>JAVASCRIPT</option>
-            <Option>PYTHON</Option>
-        </select>
-        <br>
-
-        <button class="button">Register</button>
-
-    </form>
-
-    <hr class="line">
-
-    <h3 class="heading">Thank You!</h3>
-
-    <p class="paragraph">
-        Thank you for visiting
-        <strong>Student Study Hub</strong>.
+    <p>
+        Learn • Practice • Improve
     </p>
+
+    <small>
+        © 2026 Student Study Hub
+    </small>
+
+</footer>
+
 
 </body>
 
 </html>
-
-
