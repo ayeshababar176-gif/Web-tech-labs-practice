@@ -1,0 +1,343 @@
+/* General Page */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f3fb;
+    color: #333;
+}
+
+
+/* Header */
+header {
+    background-color: #b8a4d4;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+header h2 {
+    margin: 5px;
+}
+
+header p {
+    margin: 5px;
+}
+
+
+/* Navigation */
+nav {
+    background-color: #eee7f5;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #5b3b82;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #9b59b6;
+    text-decoration: underline;
+}
+
+
+/* Homepage */
+.homepage {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+}
+
+.homepage h1 {
+    color: #6a4c93;
+}
+
+.homepage p {
+    font-size: 18px;
+}
+
+
+/* Main */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Sections */
+section {
+    background-color: white;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #6a4c93;
+    border-bottom: 2px solid #b8a4d4;
+    padding-bottom: 10px;
+}
+
+
+/* Student Profile */
+#student img {
+    display: block;
+    border-radius: 50%;
+    margin: 15px auto;
+    border: 4px solid #b8a4d4;
+}
+
+#student p {
+    font-size: 16px;
+}
+
+
+/* Course Cards */
+.course-card {
+    height: 100%;
+    border: 1px solid #d5c8e5;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.course-card .card-title {
+    color: #6a4c93;
+    font-weight: bold;
+}
+
+
+/* Purple Bootstrap Button */
+.btn-purple {
+    background-color: #6a4c93;
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #4d3570;
+    color: white;
+}
+
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a4c93;
+    padding: 10px;
+}
+
+th {
+    background-color: #b8a4d4;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f0eafa;
+}
+
+
+/* Campus News */
+#news ol {
+    line-height: 2;
+}
+
+
+/* Form */
+form {
+    max-width: 700px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #9b59b6;
+}
+
+
+/* Radio Buttons */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+
+/* Register Button */
+button[type="submit"] {
+    background-color: #6a4c93;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #4d3570;
+}
+
+
+/* Clear Button */
+button[type="reset"] {
+    background-color: #ddd;
+    color: #333;
+}
+
+button[type="reset"]:hover {
+    background-color: #bbb;
+}
+
+
+/* Footer */
+footer {
+    background-color: #b8a4d4;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #eee7f5;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    section {
+        margin: 15px 5px;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

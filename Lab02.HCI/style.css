@@ -1,0 +1,226 @@
+/* =========================
+   General Styling
+========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #faf8fc;
+    color: #333;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    background-color: #b8a4d4;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0 0 20px;
+    font-size: 35px;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Home Section
+========================= */
+
+#Home {
+    padding: 30px;
+    text-align: center;
+}
+
+#Home p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Profile Section
+========================= */
+
+#Profile {
+    padding: 20px;
+}
+
+#Profile .card {
+    border: 2px solid #b8a4d4;
+    border-radius: 10px;
+}
+
+#Profile h2 {
+    color: #7b5aa6;
+    margin-bottom: 20px;
+}
+
+#Profile p {
+    font-size: 17px;
+}
+
+
+/* =========================
+   Courses Section
+========================= */
+
+#courses {
+    padding: 20px;
+}
+
+#courses h2 {
+    color: #7b5aa6;
+    margin-bottom: 20px;
+}
+
+#courses .card {
+    margin-bottom: 15px;
+    border: 2px solid #d8cbea;
+}
+
+#courses .card:hover {
+    box-shadow: 0 4px 10px #c8b8dc;
+}
+
+#courses h3 {
+    color: #7b5aa6;
+}
+
+
+/* =========================
+   Registration Section
+========================= */
+
+#Register {
+    padding: 30px;
+    margin-top: 20px;
+}
+
+#Register h2 {
+    color: #7b5aa6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   Form
+========================= */
+
+form {
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #d8cbea;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5f467d;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c8b8dc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   Radio Buttons
+========================= */
+
+form input[type="radio"] {
+    margin: 10px 5px 10px 0;
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+form button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"] {
+    background-color: #8f70b5;
+    color: white;
+}
+
+form button[type="submit"]:hover {
+    background-color: purple;
+}
+
+form button[type="reset"] {
+    background-color: #ddd;
+    color: #333;
+}
+
+form button[type="reset"]:hover {
+    background-color: #aaa;
+}
+
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    #Home {
+        padding: 20px;
+    }
+
+    #Register {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+}

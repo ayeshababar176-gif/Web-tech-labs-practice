@@ -1,0 +1,330 @@
+/* =========================
+   Whole Page
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ff;
+    color: #333;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+    margin: 5px;
+}
+
+
+/* =========================
+   Navigation Bar
+========================= */
+
+nav {
+    background-color: #2d2a4a;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 8px;
+}
+
+nav a:hover {
+    color: #d8b4fe;
+}
+
+
+/* =========================
+   Homepage
+========================= */
+
+.homepage {
+    text-align: center;
+    padding: 30px;
+    background-color: #e9e3ff;
+}
+
+.homepage h1 {
+    color: #5b21b6;
+    margin-bottom: 10px;
+}
+
+.homepage p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   Horizontal Lines
+========================= */
+
+hr {
+    border: none;
+    border-top: 2px solid #c4b5fd;
+    margin: 20px 0;
+}
+
+
+/* =========================
+   Main Sections
+========================= */
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    padding: 30px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   Home Section
+========================= */
+
+#home {
+    background-color: #ede9fe;
+}
+
+#home h2 {
+    color: #5b21b6;
+    margin-bottom: 15px;
+}
+
+#home p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#home a {
+    color: #6c5ce7;
+}
+
+
+/* =========================
+   Student Details
+========================= */
+
+#student {
+    background-color: #fce7f3;
+}
+
+#student h2 {
+    color: #be185d;
+    margin-bottom: 20px;
+}
+
+#student img {
+    border-radius: 50%;
+    border: 4px solid #ec4899;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#student p {
+    margin: 10px 0;
+}
+
+
+/* =========================
+   Subjects
+========================= */
+
+#subjects {
+    background-color: #ecfeff;
+}
+
+#subjects h2 {
+    color: #0e7490;
+    margin-bottom: 20px;
+}
+
+#subjects table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#subjects th {
+    background-color: #0891b2;
+    color: white;
+    padding: 12px;
+}
+
+#subjects td {
+    padding: 10px;
+    text-align: center;
+}
+
+#subjects tr:nth-child(even) {
+    background-color: #cffafe;
+}
+
+#subjects tr:hover {
+    background-color: #a5f3fc;
+}
+
+#subjects caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Campus News
+========================= */
+
+#news {
+    background-color: #fef3c7;
+}
+
+#news h2 {
+    color: #92400e;
+    margin-bottom: 15px;
+}
+
+#news ol {
+    padding-left: 25px;
+}
+
+#news li {
+    margin: 12px 0;
+}
+
+
+/* =========================
+   Enrollment Form
+========================= */
+
+#enroll {
+    background-color: #f3e8ff;
+}
+
+#enroll h2 {
+    color: #7e22ce;
+    margin-bottom: 20px;
+}
+
+#enroll form {
+    width: 80%;
+    margin: auto;
+}
+
+#enroll label {
+    font-weight: bold;
+}
+
+#enroll input[type="text"],
+#enroll input[type="email"],
+#enroll input[type="date"],
+#enroll input[type="tel"],
+#enroll select,
+#enroll textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #c4b5fd;
+    border-radius: 5px;
+}
+
+#enroll input:focus,
+#enroll select:focus,
+#enroll textarea:focus {
+    outline: none;
+    border: 2px solid #7c3aed;
+}
+
+#enroll input[type="radio"],
+#enroll input[type="checkbox"] {
+    margin: 8px;
+}
+
+#enroll textarea {
+    resize: vertical;
+}
+
+#enroll button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#enroll button[type="submit"] {
+    background-color: #7c3aed;
+    color: white;
+}
+
+#enroll button[type="reset"] {
+    background-color: #64748b;
+    color: white;
+}
+
+#enroll button:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+#footer {
+    background-color: #2d2a4a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+#footer h3 {
+    margin-bottom: 15px;
+}
+
+#footer p {
+    margin: 8px;
+}
+
+#footer a {
+    color: #d8b4fe;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: white;
+}
