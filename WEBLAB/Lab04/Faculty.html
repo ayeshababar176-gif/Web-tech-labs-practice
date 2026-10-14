@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty & Timetable - CS Department</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 40px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Department Faculty & Timetable</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="faculty.html">Faculty</a> | 
+            <a href="programs.html">Programs</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Table 1: Faculty Members -->
+        <section>
+            <table>
+                <caption>Department Faculty Members</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Specialization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>F001</td>
+                        <td>Dr. Ahmed Khan</td>
+                        <td>Professor</td>
+                        <td>Artificial Intelligence</td>
+                    </tr>
+                    <tr>
+                        <td>F002</td>
+                        <td>Dr. Ayesha Malik</td>
+                        <td>Associate Professor</td>
+                        <td>Software Engineering</td>
+                    </tr>
+                    <tr>
+                        <td>F003</td>
+                        <td>Prof. Bilal Ahmed</td>
+                        <td>Assistant Professor</td>
+                        <td>Database Systems</td>
+                    </tr>
+                    <tr>
+                        <td>F004</td>
+                        <td>Ms. Fatima Noor</td>
+                        <td>Lecturer</td>
+                        <td>Web Technologies</td>
+                    </tr>
+                    <tr>
+                        <td>F005</td>
+                        <td>Mr. Usman Tariq</td>
+                        <td>Lab Instructor</td>
+                        <td>Computer Networks</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total Active Faculty Members: 5</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Table 2: Weekly Lab Timetable (using rowspan & colspan) -->
+        <section>
+            <table>
+                <caption>Weekly Lab Timetable</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>09:00 AM - 11:00 AM</th>
+                        <th>11:15 AM - 01:15 PM</th>
+                        <th>02:00 PM - 04:00 PM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Web Tech Lab (BSCS-A)</td>
+                        <td>Databases Lab (BSCS-B)</td>
+                        <td>AI Lab (BSSE)</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td colspan="2">Programming Fundamentals Lab (Combined Session)</td>
+                        <td>Networks Lab</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Operating Systems Lab</td>
+                        <td rowspan="2">Final Year Project Mentorship (Full Block)</td>
+                        <td>Free Slot</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Cyber Security Lab</td>
+                        <td>Mobile App Dev Lab</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Department of Computer Science</p>
+    </footer>
+
+</body>
+</html>
