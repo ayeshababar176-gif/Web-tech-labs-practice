@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors, Pseudo-classes and Specificity</title>
+    <link rel="stylesheet" href="selectors.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation bar using descendant selectors and :hover -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Table using :nth-child(even) and attribute selector -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Credit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>DB</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>OS</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Attribute selector element -->
+        <div class="input-container">
+            <input type="text" placeholder="Attribute selector" data-type="sample">
+        </div>
+
+        <!-- Specificity demonstration element -->
+        <p class="text-class" id="text-id">
+            This text is BLUE because the id rule has the highest specificity.
+        </p>
+    </div>
+
+</body>
+</html>

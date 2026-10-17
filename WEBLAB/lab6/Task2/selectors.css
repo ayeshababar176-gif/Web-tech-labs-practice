@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 650px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 1. Navbar styling using Descendant Selectors & Pseudo-classes (:hover) */
+.navbar {
+    background-color: #1d3557;
+    padding: 10px 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 5px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 12px;
+    display: block;
+    font-size: 14px;
+}
+
+/* Hover and active pseudo-classes */
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background-color: #fca311;
+    color: #000000;
+}
+
+/* 2. Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+table th, table td {
+    border: 1px solid #dcdcdc;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #f8f9fa;
+    color: #333333;
+}
+
+/* 3. Pseudo-class :nth-child(even) styling */
+table tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+/* 4. Attribute Selector styling */
+input[data-type="sample"] {
+    border: 1px solid #1d3557;
+    padding: 6px 10px;
+    width: 200px;
+    font-size: 13px;
+    color: #666;
+    background-color: #fff;
+}
+
+input[data-type="sample"]::placeholder {
+    color: #888888;
+}
+
+/* 5. Specificity Demonstration */
+/* Class selector rule (Lower specificity: 0,1,0) */
+.text-class {
+    color: red;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* ID selector rule (Higher specificity: 1,0,0) - This color wins! */
+#text-id {
+    color: #0000ff; 
+}

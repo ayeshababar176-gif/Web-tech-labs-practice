@@ -1,0 +1,66 @@
+<!-- Student Name: Ayesha Babar | Roll No / ID: 272 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Sign-up</title>
+</head>
+<body>
+
+    <!-- Action path ko 'thanks.html' kar diya gaya hai -->
+    <form action="thanks.html" method="get">
+        <fieldset style="width: 300px;">
+            <legend><h2>Subscribe</h2></legend>
+
+            <!-- Name Field -->
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="Ali" required>
+            </p>
+
+            <!-- Email Field -->
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="ali@x.com" required>
+            </p>
+
+            <!-- Frequency Radio Group -->
+            <p>
+                Frequency: 
+                <input type="radio" id="daily" name="freq" value="daily">
+                <label for="daily">Daily</label>
+
+                <input type="radio" id="weekly" name="freq" value="weekly" checked>
+                <label for="weekly">Weekly</label>
+            </p>
+
+            <!-- Interests Checkboxes -->
+            <p>
+                Interests: 
+                <input type="checkbox" id="web" name="topics" value="web" checked>
+                <label for="web">Web</label>
+
+                <input type="checkbox" id="ai" name="topics" value="ai">
+                <label for="ai">AI</label>
+            </p>
+
+            <!-- City Drop-down -->
+            <p>
+                <label for="city">City:</label>
+                <select id="city" name="city">
+                    <option value="Lahore" selected>Lahore</option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Islamabad">Islamabad</option>
+                </select>
+            </p>
+
+            <!-- Submit Button -->
+            <p>
+                <button type="submit">Subscribe</button>
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+</html>

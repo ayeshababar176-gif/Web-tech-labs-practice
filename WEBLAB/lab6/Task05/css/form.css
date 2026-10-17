@@ -1,0 +1,86 @@
+/* Registration Form Stylesheet */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 550px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Fieldset and Legend Styling */
+fieldset {
+    border: 2px solid #1d3557;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #1d3557;
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+/* Label and Input Spacing */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Input Focus Outline / Border Effect */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #fca311;
+    box-shadow: 0 0 5px rgba(252, 163, 17, 0.3);
+}
+
+/* Attribute Selector for Submit Buttons */
+input[type="submit"],
+button[type="submit"] {
+    background-color: #1d3557;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #457b9d;
+}

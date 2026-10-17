@@ -1,0 +1,50 @@
+<!-- Ayesha Babar(272) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Methods of CSS</title>
+    <!-- 1. External Stylesheet Link -->
+    <link rel="stylesheet" href="methods.css">
+
+    <!-- 2. Internal CSS -->
+    <style>
+        .internal-style {
+            color: green;
+        }
+
+        /* Conflict test: Internal CSS style */
+        #conflict-para {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Three Ways to Include CSS</h1>
+
+        <!-- Method 1: Inline CSS -->
+        <h2>1. Inline CSS</h2>
+        <p style="color: purple;">This paragraph is styled using inline CSS (using the style attribute).</p>
+
+        <!-- Method 2: Internal CSS -->
+        <h2>2. Internal CSS</h2>
+        <p class="internal-style">This paragraph is styled using internal CSS (inside the &lt;style&gt; tag in the head).</p>
+
+        <!-- Method 3: External CSS -->
+        <h2>3. External CSS</h2>
+        <p class="external-style">This paragraph is styled using an external CSS file (css/methods.css).</p>
+
+        <hr style="margin: 25px 0;">
+
+        <!-- Priority / Precedence Test -->
+        <h2>CSS Precedence Test (Same property set in all three ways)</h2>
+        <p class="external-style internal-style" id="conflict-para" style="color: red;">
+            This paragraph has its color set by External (orange), Internal (green), and Inline (red).
+        </p>
+    </div>
+
+</body>
+</html>

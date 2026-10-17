@@ -1,0 +1,61 @@
+<!-- Student Name: Ayesha Babar | Roll No / ID: 272 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Optional styling to make it look compact and neat */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        fieldset {
+            width: 280px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend><h2>Login</h2></legend>
+
+            <!-- Email / Username Field -->
+            <p>
+                <label for="username">Email or Username:</label><br>
+                <input type="text" id="username" name="username" required style="width: 95%;">
+            </p>
+
+            <!-- Password Field (minlength 8) -->
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" minlength="8" required style="width: 95%;" title="Password must be at least 8 characters long">
+            </p>
+
+            <!-- Remember Me & Forgot Password -->
+            <p>
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </p>
+
+            <p>
+                <a href="#">Forgot password?</a>
+            </p>
+
+            <!-- Login Button -->
+            <p>
+                <button type="submit" style="width: 100%; padding: 6px;">Login</button>
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!-- Student Name: Ayesha Babar | Roll No / ID: 272 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+
+    <form action="thanks.html" method="get">
+        <fieldset style="width: 350px;">
+            <legend><h2>Feedback / Contact Form</h2></legend>
+
+            <!-- Hidden Field -->
+            <input type="hidden" name="form_id" value="feedback_form_01">
+
+            <!-- Name Field -->
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required style="width: 95%;">
+            </p>
+
+            <!-- Email Field -->
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required style="width: 95%;">
+            </p>
+
+            <!-- Subject Select Dropdown -->
+            <p>
+                <label for="subject">Subject:</label><br>
+                <select id="subject" name="subject" required style="width: 97%;">
+                    <option value="">--Select Subject--</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Complaint">Complaint</option>
+                </select>
+            </p>
+
+            <!-- Rating Range (1-10) -->
+            <p>
+                <label for="rating">Rating (1-10):</label><br>
+                <input type="range" id="rating" name="rating" min="1" max="10" value="5" oninput="this.nextElementSibling.value = this.value">
+                <output>5</output>
+            </p>
+
+            <!-- Preferred Contact Time -->
+            <p>
+                <label for="contact-time">Preferred Contact Time:</label><br>
+                <input type="time" id="contact-time" name="contact_time" required>
+            </p>
+
+            <!-- Message Textarea (maxlength 500) -->
+            <p>
+                <label for="message">Message (Max 500 characters):</label><br>
+                <textarea id="message" name="message" rows="4" cols="35" maxlength="500" required placeholder="Write your message here..."></textarea>
+            </p>
+
+            <!-- Submit and Reset Buttons -->
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+</html>
